@@ -35,7 +35,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Login Success, Welcome Admin!');
+					window.alert('Đăng nhập thành công, xin chào Admin!');
 					window.location.href='admin/';
 				</script>
 				<?php
@@ -44,7 +44,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Login Success, Welcome User!');
+					window.alert('Đăng nhập thành công, xin chào!');
 					window.location.href='user/';
 				</script>
 				<?php
