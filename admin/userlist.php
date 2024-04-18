@@ -1,19 +1,19 @@
 <div class="col-lg-12">
     <div class="panel panel-default" style="height:50px;">
-		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-user"></span> User List</strong></span>
+		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-user"></span> Danh sách tài khoản</strong></span>
 		<div class="pull-right" style="margin-right:10px; margin-top:7px;">
-			<a href="#add_user" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add</a>
+			<a href="#add_user" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm tài khoản</a>
 		</div>
 	</div>
 	<table width="100%" class="table table-striped table-bordered table-hover" id="userList">
         <thead>
             <tr>
-                <th>Name</th>
+                <th>Tên</th>
 				<th>Username</th>
 				<th>Password</th>
-				<th>Photo</th>
-				<th>Access</th>
-				<th>Action</th>
+				<th>Ảnh</th>
+				<th>Trạng thái truy cập</th>
+				<th>Quản lý</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,8 +37,8 @@
 					?>
 				</td>
 				<td> 
-					<button type="button" class="btn btn-warning edituser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-pencil"></span> Edit</button> || 
-					<button type="button" class="btn btn-danger deleteuser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+					<button type="button" class="btn btn-warning edituser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-pencil"></span> Chỉnh sửa</button> || 
+					<button type="button" class="btn btn-danger deleteuser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-trash"></span> Xóa</button>
 				</td>
 			</tr>
 			<?php

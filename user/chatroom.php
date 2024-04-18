@@ -8,6 +8,7 @@
 	
 	$cmem=mysqli_query($conn,"select * from chat_member where chatroomid='$id'");
 ?>
+
 <body>
 <?php include('navbar.php'); ?>
 <div class="container-fluid">

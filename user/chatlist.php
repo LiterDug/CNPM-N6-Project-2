@@ -1,16 +1,16 @@
 <div class="col-lg-8">
     <div class="panel panel-default" style="height:50px;">
-		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> List of Chat Rooms</strong></span>
+		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng Chat</strong></span>
 		<div class="pull-right" style="margin-right:10px; margin-top:7px;">
-			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add</a>
+			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm phòng</a>
 		</div>
 	</div>
 	<table width="100%" class="table table-striped table-bordered table-hover" id="chatRoom">
         <thead>
             <tr>
-                <th>Chat Room/Office Name</th>
-				<th>Date Created</th>
-				<th><span class="glyphicon glyphicon-lock"></span> Password || <span class="glyphicon glyphicon-user"></span> Member</th>
+                <th>Phòng Chat/Tên phòng ban</th>
+				<th>Ngày khởi tạo</th>
+				<th><span class="glyphicon glyphicon-envelope"></span> Tham gia</th>
 			</tr>
 		</thead>
 		<tbody>

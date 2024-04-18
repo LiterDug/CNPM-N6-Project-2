@@ -7,7 +7,7 @@
 		$data = htmlspecialchars($data);
 		return $data;
 	}
-	
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$username=check_input($_POST['username']);
 		
@@ -53,4 +53,5 @@
 		
 		}
 	}
+	
 ?>

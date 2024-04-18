@@ -4,13 +4,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add New User</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Thêm tài khoản mới</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 				<form>
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Name:</span>
+						<span class="input-group-addon" style="width:150px;">Tên:</span>
 						<input type="text" style="width:350px;" class="form-control" id="uname" required>
 					</div>
 					<div class="form-group input-group">
@@ -22,7 +22,7 @@
 						<input type="text" style="width:350px;" class="form-control" id="upassword" required>
 					</div>
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Access:</span>
+						<span class="input-group-addon" style="width:150px;">Trạng thái truy cập:</span>
 						<select style="width:350px;" class="form-control" id="uaccess">
 							<option value="2">User</option>
 							<option value="1">Admin</option>
@@ -31,8 +31,8 @@
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="button" class="btn btn-primary" id="adduser"><span class="glyphicon glyphicon-check"></span> Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <button type="button" class="btn btn-primary" id="adduser"><span class="glyphicon glyphicon-check"></span> Thêm</button>
 				</form>
                 </div>
             </div>

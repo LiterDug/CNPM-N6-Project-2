@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Logging out...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang đăng xuất<table></table>...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -12,8 +12,8 @@
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <a href="logout.php" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <a href="logout.php" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
                 </div>
             </div>
             <!-- /.modal-content -->
@@ -28,20 +28,20 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Uploading Photo...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang cập nhật ảnh...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<form method="POST" enctype="multipart/form-data" action="update_photo.php">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Photo:</span>
+						<span class="input-group-addon" style="width:150px;">Ảnh:</span>
 						<input type="file" style="width:350px;" class="form-control" name="image">
 					</div>
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-upload"></span> Upload</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-upload"></span> Tải lên</button>
 					</form>
                 </div>
             </div>
