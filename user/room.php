@@ -40,7 +40,7 @@
 						}
 						else{
 							?>
-							<a href="index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Lobby</a>
+							<a href="index.php" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Trang chủ</a>
 							<a href="#leave_room" data-toggle="modal" class="btn btn-warning">Rời phòng chat</a>
 							<?php
 						}
