@@ -30,16 +30,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Deleting Room...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang xóa phòng chat...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
+					<h3><center>Bạn đã chắc chắn xóa chưa?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-danger" id="confirm_delete"><span class="glyphicon glyphicon-check"></span> Delete</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <button type="submit" class="btn btn-danger" id="confirm_delete"><span class="glyphicon glyphicon-check"></span>Xóa</button>
 				
                 </div>
             </div>
@@ -55,13 +55,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add Member</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Thêm thành viên</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<form method="POST" action="addnewmember.php?id=<?php echo $id; ?>">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Select:</span>
+						<span class="input-group-addon" style="width:150px;">Lựa chọn:</span>
 						<select style="width:350px;" class="form-control" name="user">
 							<?php
 							include('../conn.php');
