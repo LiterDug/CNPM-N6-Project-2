@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<div>
-			<div class="panel panel-default" style="height: 400px; width:150%">
+			<div class="panel panel-default" style="height: 400px">
 					<div style="height:10px;"></div>
 					<span style="margin-left:10px;">Xin chào bạn đến với phòng chat</span><br>
 					<span style="font-size:10px; margin-left:10px;"><i>Lưu ý: Phòng chat này chỉ phục vụ cho công việc, không sử dụng những từ ngữ thô tục</i></span>
