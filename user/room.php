@@ -1,6 +1,6 @@
-		<div class="col-lg-8">
-            <div class="panel panel-default" style="height:50px;">
-				<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span  id="user_details"><span class="glyphicon glyphicon-user"></span><span class="badge"><?php echo mysqli_num_rows($cmem); ?></span></span> <?php echo $chatrow['chat_name']; ?></strong></span>
+		<div class="col-lg-8;" style="width:100%;">
+            <div class="panel panel-default" style="height:50px">
+				<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span  id="user_details"><span class="glyphicon glyphicon-envelope"></span> <?php echo $chatrow['chat_name']; ?></strong></span>
 				<div class="showme hidden" style="position: absolute; left:-120px; top:20px;">
 					<div class="well">
 						<strong>Room Member/s:</strong>
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<div>
-			<div class="panel panel-default" style="height: 400px;">
+			<div class="panel panel-default" style="height: 400px; width:150%">
 					<div style="height:10px;"></div>
 					<span style="margin-left:10px;">Xin chào bạn đến với phòng chat</span><br>
 					<span style="font-size:10px; margin-left:10px;"><i>Lưu ý: Phòng chat này chỉ phục vụ cho công việc, không sử dụng những từ ngữ thô tục</i></span>

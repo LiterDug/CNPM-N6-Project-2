@@ -13,7 +13,6 @@
 <?php include('navbar.php'); ?>
 <div class="container-fluid">
 	<div class="row">
-		<?php include('mychat.php'); ?>
 		<?php include('room.php'); ?>
 	</div>
 </div>
