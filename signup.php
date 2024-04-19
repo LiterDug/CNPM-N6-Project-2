@@ -15,7 +15,7 @@
 		padding: auto;
 	}
         #backgroundImage {
-            background-image: url('logo.jpg');
+            background-image: url('Bgr.jpg');
            
             background-size: 100%;
             

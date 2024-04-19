@@ -1,6 +1,7 @@
-<div class="col-lg-8">
-    <div class="panel panel-default" style="height:50px;">
-		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng Chat</strong></span>
+<div 
+class="col-lg-8" style="width:100%;">
+    <div class="panel panel-default " style="height:50px;" >
+		<span style= "font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng Chat</strong></span>
 		<div class="pull-right" style="margin-right:10px; margin-top:7px;">
 			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm phòng</a>
 		</div>
@@ -13,6 +14,7 @@
 				<th><span class="glyphicon glyphicon-envelope"></span> Tham gia</th>
 			</tr>
 		</thead>
+		
 		<tbody>
 		<?php
 			$query=mysqli_query($conn,"select * from chatroom order by date_created desc");
@@ -47,7 +49,7 @@
 					<?php
 					$num=mysqli_query($conn,"select * from chat_member where chatroomid='".$row['chatroomid']."'");
 					?>
-					<span class="badge"><?php echo mysqli_num_rows($num); ?></span> <?php echo $row['chat_name']; ?>
+					 <?php echo $row['chat_name']; ?>
 				</td>
 				<td><?php echo date('M d, Y - h:i A', strtotime($row['date_created'])); ?></td>
 				<td><button value="<?php echo $row['chatroomid']; ?>" class="btn btn-info join_chat"><span class="glyphicon glyphicon-comment"></span> Join</button> &nbsp;

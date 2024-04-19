@@ -1,9 +1,6 @@
 <div class="col-lg-12">
     <div class="panel panel-default" style="height:50px;">
 		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng chat</strong></span>
-		<div class="pull-right" style="margin-right:10px; margin-top:7px;">
-			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm phòng chat</a>
-		</div>
 	</div>
 	<table width="100%" class="table table-striped table-bordered table-hover" id="chatRoom">
         <thead>
@@ -25,7 +22,7 @@
 				<td><input type="hidden" id="pass<?php echo $row['chatroomid']; ?>" value="<?php echo $row['chat_password']; ?>"><?php echo $row['chat_password']; ?></td>
 				<td><?php echo date('M d, Y - h:i A', strtotime($row['date_created'])); ?></td>
 				<td> 
-					<button class="btn btn-warning edit" value="<?php echo $row['chatroomid']; ?>"><span class="glyphicon glyphicon-pencil"></span> Chỉnh sửa</button> || 
+
 					<button class="btn btn-danger delete" value="<?php echo $row['chatroomid']; ?>"><span class="glyphicon glyphicon-trash"></span> Xóa</button>
 				</td>
 			</tr>

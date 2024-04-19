@@ -20,17 +20,18 @@ div.dataTables_filter label {
 }
 
 div.dataTables_filter input {
-	margin-left: 0.5em;
+	margin-left: 1100px;
 	display: inline-block;
 }
 
 div.dataTables_info {
 	padding-top: 8px;
+	width: 1000px;
 	white-space: nowrap;
 }
 
 div.dataTables_paginate {
-	margin: 0;
+	margin : 0;
 	white-space: nowrap;
 	text-align: right;
 }
@@ -72,13 +73,6 @@ table.dataTable thead .sorting_asc_disabled,
 table.dataTable thead .sorting_desc_disabled {
 	cursor: pointer;
 }
-
-table.dataTable thead .sorting { background: url('../images/sort_both.png') no-repeat center right; }
-table.dataTable thead .sorting_asc { background: url('../images/sort_asc.png') no-repeat center right; }
-table.dataTable thead .sorting_desc { background: url('../images/sort_desc.png') no-repeat center right; }
-
-table.dataTable thead .sorting_asc_disabled { background: url('../images/sort_asc_disabled.png') no-repeat center right; }
-table.dataTable thead .sorting_desc_disabled { background: url('../images/sort_desc_disabled.png') no-repeat center right; }
 
 table.dataTable thead > tr > th {
 	padding-left: 18px;

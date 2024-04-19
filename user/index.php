@@ -4,7 +4,7 @@
 <?php include('navbar.php'); ?>
 <div class="container-fluid">
 	<div class="row">
-		<?php include('mychat.php'); ?>
+	
 		<?php include('chatlist.php'); ?>
 	</div>
 </div>

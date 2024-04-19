@@ -11,7 +11,6 @@
                 <th>Tên</th>
 				<th>Username</th>
 				<th>Password</th>
-				<th>Ảnh</th>
 				<th>Trạng thái truy cập</th>
 				<th>Quản lý</th>
 			</tr>
@@ -25,7 +24,6 @@
 				<td><input type="hidden" id="ename<?php echo $row['userid']; ?>" value="<?php echo $row['uname']; ?>"><?php echo $row['uname']; ?></td>
 				<td><input type="hidden" id="eusername<?php echo $row['userid']; ?>" value="<?php echo $row['username']; ?>"><?php echo $row['username']; ?></td>
 				<td><input type="hidden" id="epassword<?php echo $row['userid']; ?>" value="<?php echo $row['password']; ?>"><?php echo $row['password']; ?></td>
-				<td><img src="../<?php if(empty($row['photo'])){echo "upload/profile.jpg";}else{echo $row['photo'];} ?>" height="30px;" width="30px;"></td>
 				<td>
 					<?php 
 						if ($row['access']==1){
@@ -37,7 +35,6 @@
 					?>
 				</td>
 				<td> 
-					<button type="button" class="btn btn-warning edituser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-pencil"></span> Chỉnh sửa</button> || 
 					<button type="button" class="btn btn-danger deleteuser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-trash"></span> Xóa</button>
 				</td>
 			</tr>
