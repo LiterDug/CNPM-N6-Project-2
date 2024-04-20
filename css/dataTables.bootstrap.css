@@ -20,13 +20,13 @@ div.dataTables_filter label {
 }
 
 div.dataTables_filter input {
-	margin-left: 1100px;
+	margin-left: 0px;
 	display: inline-block;
 }
 
 div.dataTables_info {
 	padding-top: 8px;
-	width: 1000px;
+	width: 10px;
 	white-space: nowrap;
 }
 

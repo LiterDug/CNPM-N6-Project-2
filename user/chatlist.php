@@ -6,7 +6,7 @@ class="col-lg-8" style="width:100%;">
 			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm phòng</a>
 		</div>
 	</div>
-	<table width="100%" class="table table-striped table-bordered table-hover" id="chatRoom">
+	<table class="table table-striped table-bordered table-hover" id="chatRoom">
         <thead>
             <tr>
                 <th>Phòng Chat/Tên phòng ban</th>
