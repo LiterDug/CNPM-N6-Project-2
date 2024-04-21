@@ -18,7 +18,7 @@
 				$num=mysqli_query($conn,"select * from chat_member where chatroomid='".$row['chatroomid']."'");
 			?>
 			<tr>
-				<td><span class="glyphicon glyphicon-user"></span><span class="badge"><?php echo mysqli_num_rows($num); ?></span> <input type="hidden" id="name<?php echo $row['chatroomid']; ?>" value="<?php echo $row['chat_name']; ?>"><?php echo $row['chat_name']; ?></td>
+				<td></span> <input type="hidden" id="name<?php echo $row['chatroomid']; ?>" value="<?php echo $row['chat_name']; ?>"><?php echo $row['chat_name']; ?></td>
 				<td><input type="hidden" id="pass<?php echo $row['chatroomid']; ?>" value="<?php echo $row['chat_password']; ?>"><?php echo $row['chat_password']; ?></td>
 				<td><?php echo date('M d, Y - h:i A', strtotime($row['date_created'])); ?></td>
 				<td> 

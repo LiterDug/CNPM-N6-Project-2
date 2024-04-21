@@ -4,12 +4,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Leaving Room...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang rời phòng chat...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Are you sure?</center></h3>
-					<span style="font-size: 11px;"><center><i>Note: Once you leave the room and you wanted to come back, password is needed for a locked room.</i></center></span>
+					<h3><center>Bạn đã chắc chắn rời phòng chat chưa?</center></h3>
+					<span style="font-size: 11px;"><center><i>Lưu ý: Khi bạn rời khỏi phòng chat, khi quay trở lại phòng bạn cần nhập đúng mật khẩu</i></center></span>
                 </div> 
 				</div>
                 <div class="modal-footer">
@@ -75,7 +75,7 @@
 								$u=mysqli_query($conn,"select * from `user` where userid not in ('".$users."')");
 								if(mysqli_num_rows($u)<1){
 									?>
-									<option value="">No User Available</option>
+									<option value="">Không có thành viên</option>
 									<?php
 								}
 								else{
