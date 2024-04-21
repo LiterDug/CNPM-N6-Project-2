@@ -35,6 +35,7 @@
 					?>
 				</td>
 				<td> 
+				<button type="button" class="btn btn-warning edituser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-pencil"></span> Chỉnh sửa</button> || 
 					<button type="button" class="btn btn-danger deleteuser" value="<?php echo $row['userid']; ?>"><span class="glyphicon glyphicon-trash"></span> Xóa</button>
 				</td>
 			</tr>
