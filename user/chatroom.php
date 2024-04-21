@@ -25,23 +25,12 @@
 <script src="../js/dataTables.responsive.js"></script>
 <script>
 $(document).ready(function(){
-	
-	$('#myChatRoom').DataTable({
-	"sDom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-	"bLengthChange": false,
-	"bInfo": false,
-	"bPaginate": true,
-	"bFilter": false,
-	"bSort": false,
-	"pageLength": 8
-	});
-	
 	displayChat();
 	
 		$(document).on('click', '#send_msg', function(){
 			id = <?php echo $id; ?>;
 			if($('#chat_msg').val() == ""){
-				alert('Please write message first');
+				alert('Hãy nhập tin nhắn trước khi nhấn gửi');
 			}else{
 				$msg = $('#chat_msg').val();
 				$.ajax({

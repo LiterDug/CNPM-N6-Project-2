@@ -55,13 +55,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Add Member</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Thêm thành viên</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
 					<form method="POST" action="addnewmember.php?id=<?php echo $id; ?>">
 					<div class="form-group input-group">
-						<span class="input-group-addon" style="width:150px;">Select:</span>
+						<span class="input-group-addon" style="width:150px;">Lựa chọn:</span>
 						<select style="width:350px;" class="form-control" name="user">
 							<?php
 							include('../conn.php');

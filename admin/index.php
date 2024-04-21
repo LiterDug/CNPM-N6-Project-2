@@ -25,23 +25,7 @@ $(document).ready(function(){
 	"pageLength": 7
 	});
 	
-	$(document).on('click', '#addchatroom', function(){
-		chatname=$('#chat_name').val();
-		chatpass=$('#chat_password').val();
-			$.ajax({
-				url:"add_chatroom.php",
-				method:"POST",
-				data:{
-					chatname: chatname,
-					chatpass: chatpass,
-				},
-				success:function(data){
-				window.location.href='chatroom.php?id='+data;
-				}
-			});
-		
-	});
-	//
+	//xóa phòng chat
 	$(document).on('click', '.delete', function(){
 		var rid=$(this).val();
 		$('#delete_room').modal('show');
@@ -65,39 +49,6 @@ $(document).ready(function(){
 				}
 			});
 	});
-	
-	$(document).on('click', '.edit', function(){
-		var rid=$(this).val();
-		var name=$('#name'+rid).val();
-		var pass=$('#pass'+rid).val();
-		$('#edit_room').modal('show');
-		$('.modal-body #room_name').val(name);
-		$('.modal-body #room_password').val(pass);
-		$('.modal-footer #confirm_update').val(rid);
-	});
-	
-	$(document).on('click', '#confirm_update', function(){
-		var nrid=$(this).val();
-		var roomname=$('#room_name').val();
-		var roompass=$('#room_password').val();
-		$('#edit_room').modal('hide');
-		$('body').removeClass('modal-open');
-		$('.modal-backdrop').remove();
-			$.ajax({
-				url:"update_room.php",
-				method:"POST",
-				data:{
-					id: nrid,
-					name: roomname,
-					pass: roompass,
-					edit: 1,
-				},
-				success:function(){
-					window.location.href='index.php';
-				}
-			});
-	});
- 
 });
 </script>	
 </body>
