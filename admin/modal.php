@@ -1,4 +1,4 @@
-<!-- Logout-->
+<!-- form đăng xuất-->
     <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -16,8 +16,5 @@
                     <a href="logout.php" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-<!-- /.modal -->

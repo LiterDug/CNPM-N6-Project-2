@@ -1,4 +1,4 @@
-<!-- Add User -->
+<!-- Thêm người dùng -->
     <div class="modal fade" id="add_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -36,13 +36,11 @@
 				</form>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
 <!-- /.modal -->
 
-<!-- Delete User -->
+<!-- Xóa người dùng -->
     <div class="modal fade" id="delete_user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
