@@ -35,7 +35,7 @@ $(document).ready(function(){
 	});
 	
 	displayChat();
-		
+		// cấu hình nút send tin nhắn
 		$(document).on('click', '#send_msg', function(){
 			id = <?php echo $id; ?>;
 			if($('#chat_msg').val() == ""){
@@ -56,7 +56,7 @@ $(document).ready(function(){
 				});
 			}	
 		});
-		
+		// cấu hình nút rời phòng chat
 		$(document).on('click', '#confirm_leave', function(){
 			id = <?php echo $id; ?>;
 			$('#leave_room').modal('hide');
@@ -75,7 +75,7 @@ $(document).ready(function(){
 				});
 				
 		});
-		
+		// cấu hình nút xoá phòng chat
 		$(document).on('click', '#confirm_delete', function(){
 			id = <?php echo $id; ?>;
 			$('#confirm_delete').modal('hide');
