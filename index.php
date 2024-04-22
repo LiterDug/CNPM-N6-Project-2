@@ -32,9 +32,9 @@
 		<h2><center><span class="glyphicon glyphicon-envelope"></span>NHÓM 6</center></h2>
 		<hr>
 		<form method="POST" action="login.php">
-		Username: <input type="text" name="username" class="form-control" required>
+		Tên đăng nhập: <input type="text" name="username" class="form-control" required>
 		<div style="height: 10px;"></div>		
-		Password: <input type="password" name="password" class="form-control" required> 
+		Mật khẩu: <input type="password" name="password" class="form-control" required> 
 		<div style="height: 10px;"></div>
 		<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</button> Chưa có tài khoản? <a href="signup.php">Đăng ký</a>
 		</form>

@@ -1,20 +1,18 @@
-<div 
-class="col-lg-8" style="width:100%;">
-    <div class="panel panel-default " style="height:50px;" >
-		<span style= "font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng Chat</strong></span>
+<div class="col-lg-8" style="width:100%">
+    <div class="panel panel-default" style="height:50px;">
+		<span style="font-size:18px; margin-left:10px; position:relative; top:13px;"><strong><span class="glyphicon glyphicon-list"></span> Danh sách phòng chat</strong></span>
 		<div class="pull-right" style="margin-right:10px; margin-top:7px;">
-			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm phòng</a>
+			<a href="#add_chatroom" data-toggle="modal" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Thêm</a>
 		</div>
 	</div>
-	<table class="table table-striped table-bordered table-hover" id="chatRoom">
+	<table width="100%" class="table table-striped table-bordered table-hover" id="chatRoom">
         <thead>
             <tr>
-                <th>Phòng Chat/Tên phòng ban</th>
+                <th>Tên phòng ban</th>
 				<th>Ngày khởi tạo</th>
-				<th><span class="glyphicon glyphicon-envelope"></span> Tham gia</th>
+				<th>Tham gia</th>
 			</tr>
 		</thead>
-		
 		<tbody>
 		<?php
 			$query=mysqli_query($conn,"select * from chatroom order by date_created desc");
@@ -49,10 +47,11 @@ class="col-lg-8" style="width:100%;">
 					<?php
 					$num=mysqli_query($conn,"select * from chat_member where chatroomid='".$row['chatroomid']."'");
 					?>
-					 <?php echo $row['chat_name']; ?>
+					<span class="glyphicon glyphicon-user"></span>
+					<span class="badge"><?php echo mysqli_num_rows($num); ?></span> <?php echo $row['chat_name']; ?>
 				</td>
 				<td><?php echo date('M d, Y - h:i A', strtotime($row['date_created'])); ?></td>
-				<td><button value="<?php echo $row['chatroomid']; ?>" class="btn btn-info join_chat"><span class="glyphicon glyphicon-comment"></span> Join</button> &nbsp;
+				<td><button value="<?php echo $row['chatroomid']; ?>" class="btn btn-info join_chat"><span class="glyphicon glyphicon-comment"></span> Tham gia</button> &nbsp;
 					<?php
 					if (!empty($row['chat_password'])){
 						echo '<span class="glyphicon glyphicon-lock"></span>&nbsp;';

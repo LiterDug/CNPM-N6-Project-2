@@ -8,7 +8,6 @@
 	
 	$cmem=mysqli_query($conn,"select * from chat_member where chatroomid='$id'");
 ?>
-
 <body>
 <?php include('navbar.php'); ?>
 <div class="container-fluid">
@@ -17,7 +16,6 @@
 	</div>
 </div>
 <?php include('room_modal.php'); ?>
-<?php include('out_modal.php'); ?>
 <?php include('modal.php'); ?>
 
 <script src="../js/jquery.dataTables.min.js"></script>
@@ -25,12 +23,23 @@
 <script src="../js/dataTables.responsive.js"></script>
 <script>
 $(document).ready(function(){
+	
+	$('#myChatRoom').DataTable({
+	"sDom": '<"row view-filter"<"col-sm-12"<"pull-left"l><"pull-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+	"bLengthChange": false,
+	"bInfo": false,
+	"bPaginate": true,
+	"bFilter": false,
+	"bSort": false,
+	"pageLength": 8
+	});
+	
 	displayChat();
 	
 		$(document).on('click', '#send_msg', function(){
 			id = <?php echo $id; ?>;
 			if($('#chat_msg').val() == ""){
-				alert('Hãy nhập tin nhắn trước khi nhấn gửi');
+				alert('Please write message first');
 			}else{
 				$msg = $('#chat_msg').val();
 				$.ajax({
@@ -98,54 +107,7 @@ $(document).ready(function(){
 			$('.showme').addClass('hidden');
 		});
 		
-		//
-	$(document).on('click', '.delete2', function(){
-		var rid=$(this).val();
-		$('#delete_room2').modal('show');
-		$('.modal-footer #confirm_delete2').val(rid);
-	});
 	
-	$(document).on('click', '#confirm_delete2', function(){
-		var nrid=$(this).val();
-		$('#delete_room2').modal('hide');
-		$('body').removeClass('modal-open');
-		$('.modal-backdrop').remove();
-			$.ajax({
-				url:"deleteroom.php",
-				method:"POST",
-				data:{
-					id: nrid,
-					del: 1,
-				},
-				success:function(){
-					window.location.href='index.php';
-				}
-			});
-	});
-	
-	$(document).on('click', '.leave2', function(){
-		var rid=$(this).val();
-		$('#leave_room2').modal('show');
-		$('.modal-footer #confirm_leave2').val(rid);
-	});
-	
-	$(document).on('click', '#confirm_leave2', function(){
-		var nrid=$(this).val();
-		$('#leave_room2').modal('hide');
-		$('body').removeClass('modal-open');
-		$('.modal-backdrop').remove();
-			$.ajax({
-				url:"leaveroom.php",
-				method:"POST",
-				data:{
-					id: nrid,
-					leave: 1,
-				},
-				success:function(){
-					window.location.href='index.php';
-				}
-			});
-	});
 });
 	
 	function displayChat(){

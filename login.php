@@ -7,12 +7,12 @@
 		$data = htmlspecialchars($data);
 		return $data;
 	}
-
+	
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$username=check_input($_POST['username']);
 		
 		if (!preg_match("/^[a-zA-Z0-9_]*$/",$username)) {
-			$_SESSION['msg'] = "Username should not contain space and special characters!"; 
+			$_SESSION['msg'] = "Username không được có dấu cách và kí tự đặc biệt!"; 
 			header('location: index.php');
 		}
 		else{
@@ -25,7 +25,7 @@
 		$query=mysqli_query($conn,"select * from `user` where username='$fusername' and password='$fpassword'");
 		
 		if(mysqli_num_rows($query)==0){
-			$_SESSION['msg'] = "Login Failed, Invalid Input!";
+			$_SESSION['msg'] = "Sai tên đăng nhập hoặc mật khẩu!";
 			header('location: index.php');
 		}
 		else{
@@ -44,7 +44,7 @@
 				$_SESSION['id']=$row['userid'];
 				?>
 				<script>
-					window.alert('Đăng nhập thành công, xin chào!');
+					window.alert('Đăng nhập thành công, xin chào bạn!');
 					window.location.href='user/';
 				</script>
 				<?php
@@ -53,5 +53,4 @@
 		
 		}
 	}
-	
 ?>

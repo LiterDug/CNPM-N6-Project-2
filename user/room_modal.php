@@ -1,4 +1,4 @@
-<!-- Leave Room -->
+<!-- form rời phòng chat-->
     <div class="modal fade" id="leave_room" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -8,48 +8,42 @@
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Bạn đã chắc chắn rời phòng chat chưa?</center></h3>
-					<span style="font-size: 11px;"><center><i>Lưu ý: Khi bạn rời khỏi phòng chat, khi quay trở lại phòng bạn cần nhập đúng mật khẩu</i></center></span>
+					<h3><center>Bạn đã chắc chưa?</center></h3>
+					<span style="font-size: 11px;"><center><i>Lưu ý: Khi bạn rời phòng chat, muốn quay lại phòng cần nhập đúng mật khẩu.</i></center></span>
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-warning" id="confirm_leave"><span class="glyphicon glyphicon-check"></span> Leave</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <button type="submit" class="btn btn-warning" id="confirm_leave"><span class="glyphicon glyphicon-check"></span> Rời phòng</button>
 				
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-<!-- /.modal -->
 
-<!-- Delete Room -->
+<!-- Form xóa phòng chat -->
     <div class="modal fade" id="delete_room" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel">Đang xóa phòng chat...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang xóa phòng...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
-					<h3><center>Bạn đã chắc chắn xóa chưa?</center></h3>
+					<h3><center>Bạn đã chắc chưa?</center></h3>
                 </div> 
 				</div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
-                    <button type="submit" class="btn btn-danger" id="confirm_delete"><span class="glyphicon glyphicon-check"></span>Xóa</button>
+                    <button type="submit" class="btn btn-danger" id="confirm_delete"><span class="glyphicon glyphicon-check"></span> Xóa phòng</button>
 				
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-<!-- /.modal -->
 
-<!-- Add Member -->
+<!-- Form thêm thành viên -->
     <div class="modal fade" id="add_member" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -75,7 +69,7 @@
 								$u=mysqli_query($conn,"select * from `user` where userid not in ('".$users."')");
 								if(mysqli_num_rows($u)<1){
 									?>
-									<option value="">Không có thành viên</option>
+									<option value="">Không có người dùng</option>
 									<?php
 								}
 								else{
@@ -92,13 +86,10 @@
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-check"></span> Add</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
+                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-check"></span> Thêm</button>
 					</form>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-<!-- /.modal -->

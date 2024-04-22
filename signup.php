@@ -31,11 +31,11 @@
 		<h2><center><span class="glyphicon glyphicon-user"></span> Đăng ký</center></h2>
 		<hr>
 		<form method="POST" action="register.php">
-		Name: <input type="text" name="name" class="form-control" required>
+		Tên: <input type="text" name="name" class="form-control" required>
 		<div style="height: 10px;"></div>
-		Username: <input type="text" name="username" class="form-control" required>
+		Tên đăng nhập: <input type="text" name="username" class="form-control" required>
 		<div style="height: 10px;"></div>		
-		Password: <input type="password" name="password" class="form-control" required> 
+		Mật khẩu: <input type="password" name="password" class="form-control" required> 
 		<div style="height: 10px;"></div>
 		<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-save"></span> Đăng ký</button> <a href="index.php"> Trở lại đăng nhập</a>
 		</form>

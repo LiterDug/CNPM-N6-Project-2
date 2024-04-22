@@ -4,12 +4,10 @@
 <?php include('navbar.php'); ?>
 <div class="container-fluid">
 	<div class="row">
-	
 		<?php include('chatlist.php'); ?>
 	</div>
 </div>
 <?php include('password_modal.php'); ?>
-<?php include('out_modal.php'); ?>
 <?php include('modal.php'); ?>
 
 <script src="../js/jquery.dataTables.min.js"></script>

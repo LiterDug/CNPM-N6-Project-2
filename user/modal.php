@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <center><h4 class="modal-title" id="myModalLabel"> Đang đăng xuất...</h4></center>
+                    <center><h4 class="modal-title" id="myModalLabel">Đang đăng xuất...</h4></center>
                 </div>
                 <div class="modal-body">
 				<div class="container-fluid">
@@ -12,12 +12,9 @@
                 </div> 
 				</div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Hủy</button>
                     <a href="logout.php" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Đăng xuất</a>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-<!-- /.modal -->

@@ -9,8 +9,8 @@
         <thead>
             <tr>
                 <th>Tên</th>
-				<th>Username</th>
-				<th>Password</th>
+				<th>Tên đăng nhập</th>
+				<th>Mật khẩu</th>
 				<th>Trạng thái truy cập</th>
 				<th>Quản lý</th>
 			</tr>
