@@ -15,6 +15,7 @@
 		</thead>
 		<tbody>
 		<?php
+			// sắpÍ xếp các bản ghi trong bảng chatroom theo ngày khởi tạo phòng
 			$query=mysqli_query($conn,"select * from chatroom order by date_created desc");
 			while($row=mysqli_fetch_array($query)){
 			?>

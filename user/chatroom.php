@@ -35,7 +35,7 @@ $(document).ready(function(){
 	});
 	
 	displayChat();
-	
+		
 		$(document).on('click', '#send_msg', function(){
 			id = <?php echo $id; ?>;
 			if($('#chat_msg').val() == ""){
