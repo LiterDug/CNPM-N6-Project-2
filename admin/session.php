@@ -3,7 +3,7 @@
     // Kết nối tới cơ sở dữ liệu
     include('../conn.php');
     // Kiểm tra xem người dùng đã đăng nhập chưa
-    if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+    if (!isset($_SESSION['id']) || (trim ($_SESSION['id']) == '')) {
         header('location:../');
         exit();
     }
