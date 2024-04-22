@@ -2,9 +2,8 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="">ADMIN - NHÓM 6</a>
+			<a class="navbar-brand">ADMIN - NHÓM 6</a>
 		</div>
-
 		<ul class="nav navbar-nav">
 			<li><a href="index.php"><span class="glyphicon glyphicon-list"></span> Quản lý phòng chat</a></li>
 			<li><a href="user.php"><span class="glyphicon glyphicon-user"></span> Quản lý tài khoản</a></li>
