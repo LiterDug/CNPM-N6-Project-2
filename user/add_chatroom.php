@@ -1,4 +1,5 @@
 <?php 
+	// include file session.php
 	include('session.php');
 	
 	if (isset($_POST['chatname'])){
