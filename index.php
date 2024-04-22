@@ -7,7 +7,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 	#login_form{
-		
 		width:350px;
 		height:350px;
 		position:relative;
@@ -15,7 +14,6 @@
 		margin: auto;
 		padding: auto;
 	}
-	
         #backgroundImage {
             background-image: url('Bgr.jpg');
            
